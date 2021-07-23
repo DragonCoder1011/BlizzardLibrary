@@ -1,4 +1,4 @@
-package dev.blizzard.blizzardlibrary;
+package dev.blizzardlibrary;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
