@@ -6,8 +6,8 @@ public class PluginUtil {
 
     private static JavaPlugin plugin = null;
 
-    protected static void setPlugin(Class<?> clazz) {
-        PluginUtil.plugin = JavaPlugin.getProvidingPlugin(clazz);
+    protected static void setPlugin(JavaPlugin plugin) {
+        PluginUtil.plugin = plugin;
     }
 
     protected static JavaPlugin getPlugin() {

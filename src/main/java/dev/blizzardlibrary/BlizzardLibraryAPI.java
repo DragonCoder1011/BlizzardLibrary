@@ -18,8 +18,8 @@ public class BlizzardLibraryAPI {
         return libraryAPI;
     }
 
-    public static void setPlugin(Class<?> clazz) {
-        PluginUtil.setPlugin(clazz);
+    public static void setPlugin(JavaPlugin plugin) {
+        PluginUtil.setPlugin(plugin);
     }
 
     public static JavaPlugin getPlugin() {
