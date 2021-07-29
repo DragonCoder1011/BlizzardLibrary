@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.util.task.lambda;
+package dev.blizzardlibrary.task.lambda;
 
 import dev.blizzardlibrary.BlizzardLibraryAPI;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -10,7 +10,7 @@ public interface IBukkitRunnable {
 
 
     default BukkitRunnable runTaskTimer(IThreadContext threadContext, Consumer<BukkitRunnable> block, long l1, long l2) {
-        final JavaPlugin plugin = BlizzardLibraryAPI.getPlugin();
+        final JavaPlugin plugin = BlizzardLibraryAPI.getLibraryAPI().getPlugin();
         final BukkitRunnable runnable = new BukkitRunnable() {
             @Override
             public void run() {
@@ -29,7 +29,7 @@ public interface IBukkitRunnable {
     }
 
     default BukkitRunnable runTaskLater(IThreadContext threadContext, Consumer<BukkitRunnable> block, long l1) {
-        final JavaPlugin plugin = BlizzardLibraryAPI.getPlugin();
+        final JavaPlugin plugin = BlizzardLibraryAPI.getLibraryAPI().getPlugin();
         final BukkitRunnable runnable = new BukkitRunnable() {
             @Override
             public void run() {

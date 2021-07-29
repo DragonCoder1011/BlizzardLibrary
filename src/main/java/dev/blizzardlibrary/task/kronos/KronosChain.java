@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.util.task.kronos;
+package dev.blizzardlibrary.task.kronos;
 
 import dev.blizzardlibrary.BlizzardLibraryAPI;
 
@@ -9,7 +9,6 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class KronosChain<K> {
-
 
     private final KronosRunMethods instance = BlizzardLibraryAPI.getLibraryAPI().getRunMethods();
     private final CompletableFuture<K> completableFuture;

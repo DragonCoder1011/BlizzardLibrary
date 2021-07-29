@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.util.task.kronos;
+package dev.blizzardlibrary.task.kronos;
 
 import org.bukkit.Bukkit;
 

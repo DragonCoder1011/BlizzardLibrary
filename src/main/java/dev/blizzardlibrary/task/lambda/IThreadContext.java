@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.util.task.lambda;
+package dev.blizzardlibrary.task.lambda;
 
 public enum  IThreadContext {
 

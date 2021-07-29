@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.util.task.effort;
+package dev.blizzardlibrary.task.effort;
 
 public interface EffortLoad {
 

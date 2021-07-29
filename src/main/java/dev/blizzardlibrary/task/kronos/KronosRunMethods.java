@@ -1,11 +1,11 @@
-package dev.blizzardlibrary.util.task.kronos;
+package dev.blizzardlibrary.task.kronos;
 
 import dev.blizzardlibrary.BlizzardLibraryAPI;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class KronosRunMethods {
 
-    private final JavaPlugin plugin = BlizzardLibraryAPI.getPlugin();
+    private final JavaPlugin plugin = BlizzardLibraryAPI.getLibraryAPI().getPlugin();
 
     public void runTask(Runnable runnable, ThreadContext context, long delay) {
         if (delay > 0) {
