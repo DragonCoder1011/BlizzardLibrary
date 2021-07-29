@@ -41,9 +41,9 @@ public class RandomCollection<K> {
         if (map.isEmpty() && total == 0) {
             return;
         }
-        
+
         this.map.clear();
-        this.total = 0;
+        resetTotal();
     }
 
     public void reset() {
