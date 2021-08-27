@@ -12,8 +12,6 @@ import java.util.stream.Collectors;
 @SuppressWarnings("all")
 public class ItemBuilder {
 
-    private static ItemBuilder instance = null;
-
     private Material material;
 
     private int amount;

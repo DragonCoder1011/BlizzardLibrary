@@ -2,7 +2,6 @@ package dev.blizzardlibrary.task.effort;
 
 public interface EffortLoad {
 
-
     void compute();
 
     default boolean reschedule() {

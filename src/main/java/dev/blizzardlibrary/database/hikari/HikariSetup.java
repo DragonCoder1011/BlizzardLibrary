@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.database;
+package dev.blizzardlibrary.database.hikari;
 
 import com.zaxxer.hikari.HikariDataSource;
 import dev.blizzardlibrary.string.chat.MessageUtils;
@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class HikariSetup {
 
-    private HikariDataSource dataSource;
+    private static HikariDataSource dataSource;
 
     // Hikari Settings
     private String host;
@@ -19,7 +19,7 @@ public class HikariSetup {
     private String username;
     private String password;
 
-    public HikariSetup init(int poolSize, String host, int port, String database, String username, String password, String... tables) {
+    public HikariSetup init(int poolSize, String host, int port, String database, String username, String password) {
         this.host = host;
         this.port = port;
         this.database = database;
@@ -27,7 +27,6 @@ public class HikariSetup {
         this.password = password;
         dataSource = new HikariDataSource();
         setDataSourceSettings(poolSize);
-        createTable(tables);
         MessageUtils.sendConsoleMessage("&b&lBlizzard&3&lLib &7made a connection");
         return this;
     }
@@ -46,11 +45,11 @@ public class HikariSetup {
         dataSource.addDataSourceProperty("password", password);
     }
 
-    /**
+/*    /**
      * Create a table
      *
      * @param tables Prepared Statement
-     */
+     *
     private HikariSetup createTable(String... tables) {
         try (Connection conn = dataSource.getConnection()) {
             try (PreparedStatement statement = conn.prepareStatement(Arrays.toString(tables))) {
@@ -61,15 +60,15 @@ public class HikariSetup {
         }
 
         return this;
-    }
+    }*/
+
 
     public boolean isConnected() {
         return !dataSource.isClosed();
     }
 
-    
 
-    public HikariDataSource getDataSource() {
+    public static HikariDataSource getDataSource() {
         return dataSource;
     }
 }
