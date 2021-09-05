@@ -1,8 +1,8 @@
 package dev.blizzardlibrary.string.title;
 
 import dev.blizzardlibrary.string.chat.FormatUtils;
-import dev.blizzardlibrary.task.kronos.KronosChain;
-import dev.blizzardlibrary.util.NMSExtension;
+import dev.blizzardlibrary.thread.kronos.KronosChain;
+import dev.blizzardlibrary.other.NMSExtension;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;

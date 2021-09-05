@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.task.effort;
+package dev.blizzardlibrary.thread.effort;
 
 import com.google.common.collect.Lists;
 

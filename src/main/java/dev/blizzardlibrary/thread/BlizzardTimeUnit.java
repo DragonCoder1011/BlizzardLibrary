@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.util.time;
+package dev.blizzardlibrary.thread;
 
 
 public enum BlizzardTimeUnit {

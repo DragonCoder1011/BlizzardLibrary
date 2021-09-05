@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.util;
+package dev.blizzardlibrary.other;
 
 import java.util.Collection;
 import java.util.NavigableMap;
@@ -43,28 +43,16 @@ public class RandomCollection<K> {
         }
 
         this.map.clear();
-        resetTotal();
+        this.total = 0;
     }
 
     public void reset() {
-        resetRandom();
-        resetTotal();
-        resetMap();
-    }
-
-
-    private void resetMap() {
+        this.random = null;
+        this.total = 0;
         map.clear();
         this.map = null;
     }
 
-    private void resetRandom() {
-        this.random = null;
-    }
-
-    private void resetTotal() {
-        this.total = 0;
-    }
 
     public Collection<K> values() {
         if (map.isEmpty()) {

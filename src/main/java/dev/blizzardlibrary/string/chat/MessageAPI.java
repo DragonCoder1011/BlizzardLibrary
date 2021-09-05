@@ -3,7 +3,7 @@ package dev.blizzardlibrary.string.chat;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
-public class MessageUtils {
+public class MessageAPI {
 
     public static void sendFormattedMessage(String text, Player player) {
         if (player != null) {

@@ -4,7 +4,7 @@ import com.google.common.collect.Maps;
 import dev.blizzardlibrary.BlizzardLibraryAPI;
 import dev.blizzardlibrary.builder.ItemBuilder;
 import dev.blizzardlibrary.string.chat.FormatUtils;
-import dev.blizzardlibrary.task.kronos.KronosChain;
+import dev.blizzardlibrary.thread.kronos.KronosChain;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;

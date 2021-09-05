@@ -1,4 +1,4 @@
-package dev.blizzardlibrary.util;
+package dev.blizzardlibrary.other;
 
 import com.google.common.collect.Maps;
 import org.bukkit.Bukkit;

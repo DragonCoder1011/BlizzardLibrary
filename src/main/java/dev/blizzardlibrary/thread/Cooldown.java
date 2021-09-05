@@ -1,8 +1,8 @@
-package dev.blizzardlibrary.util.time;
+package dev.blizzardlibrary.thread;
 
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
-import dev.blizzardlibrary.string.chat.MessageUtils;
+import dev.blizzardlibrary.string.chat.MessageAPI;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 
@@ -43,7 +43,7 @@ public class Cooldown {
 
     public void addToCoolDownForListener(String player, Player p, String cooldownKey, String message, Cancellable event, long coolDown) {
         if (containsCooldown(player, cooldownKey) && getCooldown(player, cooldownKey) > BlizzardTimeUnit.currentMillis()) {
-            MessageUtils.sendFormattedMessage(message, p);
+            MessageAPI.sendFormattedMessage(message, p);
             if (event == null) {
                 return;
             }

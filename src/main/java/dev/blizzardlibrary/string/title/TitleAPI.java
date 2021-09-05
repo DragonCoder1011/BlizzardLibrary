@@ -1,8 +1,8 @@
 package dev.blizzardlibrary.string.title;
 
 import dev.blizzardlibrary.string.chat.FormatUtils;
-import dev.blizzardlibrary.task.kronos.KronosChain;
-import dev.blizzardlibrary.util.NMSExtension;
+import dev.blizzardlibrary.thread.kronos.KronosChain;
+import dev.blizzardlibrary.other.NMSExtension;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
